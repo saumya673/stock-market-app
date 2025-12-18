@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 import InputField from "@/components/forms/InputField";
 import SelectField from "@/components/forms/SelectField";
+import CountrySelectField from "@/components/forms/CountrySelectField";
 import {
   INVESTMENT_GOALS,
   PREFERRED_INDUSTRIES,
@@ -77,6 +78,7 @@ const SignUp = () => {
         />
 
         {/* country */}
+        <CountrySelectField />
 
         <SelectField
           name="investmentGoals"
